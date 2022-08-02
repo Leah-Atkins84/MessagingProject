@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "message": "Good morning"
+  },
+  
+  {
+    "id": 2,
+    "message": "Good afternoon"
+  },
+
+  {
+    "id": 3,
+    "message": "Good evening"
+  },
+
+  {
+    "id": 4,
+    "message": "Good night"
+  }
+]
