@@ -1,0 +1,22 @@
+{
+  "name": "messagingproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leah-Atkins84/MessagingProject.git"
+  },
+  "author": "Leah Atkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leah-Atkins84/MessagingProject/issues"
+  },
+  "homepage": "https://github.com/Leah-Atkins84/MessagingProject#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
