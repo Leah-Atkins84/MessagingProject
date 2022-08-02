@@ -1,3 +1,4 @@
+const { json } = require("express");
 const express = require("express"); // import express dependency
 const app = express(); // initiate an express app
 const port = process.env.PORT || 5000; // port number for server to listen to
@@ -73,27 +74,14 @@ function generateMessage(){
   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-//------GET route here---------------
-// app.get('/', (req, res) => {
-//   console.log(('request from client was made', req));
-//   res.sendStatus(200);
-// })
-
-
-
-
-
+//------GET route for display messages here---------------
+app.get('/', (req, res) => {
+  res.render('index', {
+    firstName: json.payload.data.FirstName,
+    time: moment().format('LT'),
+    momentMessage: generateMessage()
+  });
+});
 
 
 //------- start up the server---------
