@@ -1,21 +1,25 @@
 [
   {
     "id": 1,
-    "message": "Good morning"
+    "message": "Good morning",
+    "time": "morning"
   },
   
   {
     "id": 2,
-    "message": "Good afternoon"
+    "message": "Good afternoon",
+    "time": "afternoon"
   },
 
   {
     "id": 3,
-    "message": "Good evening"
+    "message": "Good evening",
+    "time": "evening"
   },
 
   {
     "id": 4,
-    "message": "Good night"
+    "message": "Good night",
+    "time": "night"
   }
 ]

@@ -2,6 +2,7 @@ const express = require("express"); // import express dependency
 const app = express(); // initiate an express app
 const port = process.env.PORT || 5000; // port number for server to listen to
 const fs = require("fs"); // Import fs module
+const moment = require("moment"); // import moment.js
 
 
 /* Serve up static files (HTML, CSS...)*/
@@ -49,6 +50,38 @@ fs.readFile("./Messages.json", (err, jsonString) => {
 
 });// end data from json files
 
+/*------- generate messages based on times-------- */
+function generateMessage(){
+  let ret = "";
+  let morning = moment('08:00am', 'hh:mma');
+  let noon = moment('11:59am', 'hh:mma');
+  let evening = moment('17:59am', 'hh:mma');
+  let night = moment('11:59pm', 'hh:mma');
+  let currentTime = moment();
+
+  if(currentTime.isBefore(noon) && currentTime.isAfter(morning)){
+    ret = message.morning;
+  }
+  if(currentTime.isBefore(evening) && currentTime.isAfter(noon)){
+    ret = message.afternoon;
+  }
+  if(currentTime.isBefore(night) && currentTime.isAfter(evening)){
+    ret = message.evening;
+  }
+  else(currentTime.isAfter(night))
+    ret = message.night;
+  
+}
+
+
+
+
+
+
+
+
+
+
 
 
 //------GET route here---------------
@@ -56,6 +89,12 @@ fs.readFile("./Messages.json", (err, jsonString) => {
 //   console.log(('request from client was made', req));
 //   res.sendStatus(200);
 // })
+
+
+
+
+
+
 
 //------- start up the server---------
 app.listen(port, () => {
