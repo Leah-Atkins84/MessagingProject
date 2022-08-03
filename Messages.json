@@ -1,25 +1,19 @@
 [
   {
-    "id": 1,
-    "message": "Good morning",
-    "time": "morning"
+    "id": "checkout",
+    "text": "It is time to checkout, kindly let us know if you need more time."
   },
   
   {
-    "id": 2,
-    "message": "Good afternoon",
-    "time": "afternoon"
+    "id": "checkin",
+    "text": "It is time to check-in, please see us in the lobby."
   },
-
   {
-    "id": 3,
-    "message": "Good evening",
-    "time": "evening"
+    "id": "package",
+    "text": "You have a package ready for you to pickup at the front desk"
   },
-
   {
-    "id": 4,
-    "message": "Good night",
-    "time": "night"
+    "id": "food",
+    "text": "Your food is on it's way, enjoy!"
   }
 ]
